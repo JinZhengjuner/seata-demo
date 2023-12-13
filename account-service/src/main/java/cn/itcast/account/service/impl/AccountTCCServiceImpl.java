@@ -33,7 +33,7 @@ public class AccountTCCServiceImpl implements AccountTCCService {
         freeze.setFreezeMoney(money);
         freeze.setState(AccountFreeze.State.TRY);
         freeze.setXid(xid);
-        freezeMapper.insert(freeze);
+//        freezeMapper.insert(freeze);
     }
 
     @Override
