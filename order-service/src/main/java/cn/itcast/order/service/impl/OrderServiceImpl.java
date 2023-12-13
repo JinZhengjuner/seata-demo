@@ -6,7 +6,6 @@ import cn.itcast.order.entity.Order;
 import cn.itcast.order.mapper.OrderMapper;
 import cn.itcast.order.service.OrderService;
 import feign.FeignException;
-import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    @GlobalTransactional
+//    @GlobalTransactional
     public Long create(Order order) {
         // 创建订单
         orderMapper.insert(order);
